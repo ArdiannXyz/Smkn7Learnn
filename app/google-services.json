@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1053984482532",
+    "project_id": "smkn7learnn",
+    "storage_bucket": "smkn7learnn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053984482532:android:9da1ee40723c7ebce638f1",
+        "android_client_info": {
+          "package_name": "com.example.smkn7learnn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMhoxlF6ltWEOkLCOKeR5tfUoe4AfNLno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
