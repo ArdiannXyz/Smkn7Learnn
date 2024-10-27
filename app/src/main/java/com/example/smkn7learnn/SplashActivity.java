@@ -15,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        // Mengatur delay untuk 2 detik (2000 milidetik)
+        // Mengatur delay untuk 2 detik (1000 milidetik)
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
