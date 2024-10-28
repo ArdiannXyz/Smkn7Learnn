@@ -62,8 +62,8 @@ public class RecycleSiswa extends RecyclerView.Adapter<RecycleSiswa.ViewHolder> 
             super(itemView);
 
             imageView = itemView.findViewById(R.id.imageView);
-            name = itemView.findViewById(R.id.name);
-            number = itemView.findViewById(R.id.number);
+            name = itemView.findViewById(R.id.Mapel);
+            number = itemView.findViewById(R.id.golongan);
 
             animation(itemView);
 

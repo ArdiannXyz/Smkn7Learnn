@@ -1,9 +1,12 @@
-package com.example.smkn7learnn;
+package com.example.smkn7learnn.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.example.smkn7learnn.Profil;
+import com.example.smkn7learnn.TambahData;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
@@ -31,6 +34,8 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             return new MasterSiswaKelas();
         } else if (position == 8) {
             return new MasterGuruMapel();
+        } else if (position == 9) {
+            return new UploadMapelFragment();
         } else {
             return new Dashboard();  // Default case
         }
@@ -38,6 +43,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 9;
+        return 10;
     }
 }

@@ -1,9 +1,11 @@
-package com.example.smkn7learnn;
+package com.example.smkn7learnn.Siswa;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.example.smkn7learnn.MapelSiswa;
 
 public class ViewPagerAdaptersiswa extends FragmentStateAdapter {
     public ViewPagerAdaptersiswa(@NonNull FragmentActivity fragmentActivity) {
@@ -18,7 +20,7 @@ public class ViewPagerAdaptersiswa extends FragmentStateAdapter {
         } else if (position == 1) {
             return new MapelSiswa();
         } else if (position == 2) {
-            return new DashProfilSiswa();
+            return new DashboardProfilSiswa();
         } else {
             return new DashboardSiswaFragment();
         }

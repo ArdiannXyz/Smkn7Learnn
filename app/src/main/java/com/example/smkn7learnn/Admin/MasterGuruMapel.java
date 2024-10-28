@@ -1,4 +1,4 @@
-package com.example.smkn7learnn;
+package com.example.smkn7learnn.Admin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.smkn7learnn.R;
 
 /**
  * A simple {@link Fragment} subclass.

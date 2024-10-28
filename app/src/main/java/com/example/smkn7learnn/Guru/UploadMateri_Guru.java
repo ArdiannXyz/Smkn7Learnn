@@ -1,4 +1,4 @@
-package com.example.smkn7learnn;
+package com.example.smkn7learnn.Guru;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,12 +7,14 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.smkn7learnn.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link DataKelas#newInstance} factory method to
+ * Use the {@link UploadMateri_Guru#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DataKelas extends Fragment {
+public class UploadMateri_Guru extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +25,7 @@ public class DataKelas extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public DataKelas() {
+    public UploadMateri_Guru() {
         // Required empty public constructor
     }
 
@@ -33,11 +35,11 @@ public class DataKelas extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DataKelas.
+     * @return A new instance of fragment UploadMateri_Guru.
      */
     // TODO: Rename and change types and number of parameters
-    public static DataKelas newInstance(String param1, String param2) {
-        DataKelas fragment = new DataKelas();
+    public static UploadMateri_Guru newInstance(String param1, String param2) {
+        UploadMateri_Guru fragment = new UploadMateri_Guru();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,6 +60,6 @@ public class DataKelas extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_datakelas, container, false);
+        return inflater.inflate(R.layout.fragment_upload_materi_guru, container, false);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.smkn7learnn;
+package com.example.smkn7learnn.Guru;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -10,26 +10,27 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.smkn7learnn.R;
+import com.example.smkn7learnn.ViewPagerAdapterGuru;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class DashboardSiswaActivity extends AppCompatActivity {
-
+public class DashboardGuru extends AppCompatActivity {
 
     ViewPager2 viewPager2;
-    ViewPagerAdaptersiswa viewPagerAdaptersiswa;
+    ViewPagerAdapterGuru viewPagerAdapterguru;
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_dashboardsiswa);
+        setContentView(R.layout.activity_dashboardguru);
         LayoutInflater inflater = getLayoutInflater();
         bottomNavigationView = findViewById(R.id.bottomnav);
-        viewPager2 = findViewById(R.id.Viewpagersiswa);
-        viewPagerAdaptersiswa = new ViewPagerAdaptersiswa(this);
-        viewPager2.setAdapter(viewPagerAdaptersiswa);
+        viewPager2 = findViewById(R.id.Viewpagerguru);
+        viewPagerAdapterguru = new ViewPagerAdapterGuru(this);
+        viewPager2.setAdapter(viewPagerAdapterguru);
         viewPager2.setUserInputEnabled(true);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -37,12 +38,10 @@ public class DashboardSiswaActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if (id == R.id.b_homesiswa) {
+                if (id == R.id.b_homeguru) {
                     viewPager2.setCurrentItem(0);
-                } else if (id == R.id.b_datasiswa) {
+                } else if (id == R.id.b_profilguru) {
                     viewPager2.setCurrentItem(1);
-                } else if (id == R.id.b_profilsiswa) {
-                    viewPager2.setCurrentItem(2);
                 }
 
 
@@ -54,11 +53,9 @@ public class DashboardSiswaActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 if (position == 0) {
-                    bottomNavigationView.getMenu().findItem(R.id.b_homesiswa).setChecked(true);
+                    bottomNavigationView.getMenu().findItem(R.id.b_homeguru).setChecked(true);
                 } else if (position == 1) {
-                    bottomNavigationView.getMenu().findItem(R.id.b_datasiswa).setChecked(true);
-                } else if (position == 2) {
-                    bottomNavigationView.getMenu().findItem(R.id.b_profilsiswa).setChecked(true);
+                    bottomNavigationView.getMenu().findItem(R.id.b_profilguru).setChecked(true);
                 }
                 viewPager2.setUserInputEnabled(false);
                 super.onPageSelected(position);

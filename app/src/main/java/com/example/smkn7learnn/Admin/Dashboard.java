@@ -1,4 +1,4 @@
-package com.example.smkn7learnn;
+package com.example.smkn7learnn.Admin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.LinearLayout;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+
+import com.example.smkn7learnn.R;
 
 
 public class Dashboard extends Fragment {

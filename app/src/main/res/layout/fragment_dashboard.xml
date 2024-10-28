@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".Dashboard"
+    tools:context=".Admin.Dashboard"
     android:orientation="vertical">
 
 
@@ -386,64 +386,75 @@
     <LinearLayout
         android:id="@+id/master_siswa"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:background="@drawable/bluecorner"
+        android:layout_height="90dp"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bmudalayout"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_personplus"
-            android:paddingTop="15dp"
-            android:paddingLeft="15dp"/>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/bluecorner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:src="@drawable/ic_personplus" />
+
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingTop="27dp"
             android:text="Kelas Siswa"
             android:textColor="@color/white"
-            android:paddingLeft="30dp"
-            android:paddingTop="23dp"
-            android:textStyle="bold"
-            android:textSize="25dp"/>
-
-
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
     <LinearLayout
         android:id="@+id/masterguru"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:background="@drawable/bluecorner"
+        android:layout_height="90dp"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
-        >
+        android:background="@drawable/bmudalayout"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/mortarboard"
-            android:paddingTop="15dp"
-            android:paddingLeft="15dp"/>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/bluecorner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:src="@drawable/mortarboard" />
+
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guru Mapel"
+            android:paddingLeft="50dp"
+            android:paddingTop="27dp"
+            android:text="Mapel guru"
             android:textColor="@color/white"
-            android:paddingLeft="30dp"
-            android:paddingTop="23dp"
-            android:textStyle="bold"
-            android:textSize="25dp"/>
-
-
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

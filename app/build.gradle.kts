@@ -38,9 +38,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    // Menambahkan Glide dan FloatingActionButton
+    implementation(libs.glide)
     implementation(libs.firebase.database)
-    implementation(libs.firebase.firestore)
-    implementation(libs.media3.common)
+    implementation(libs.firebase.storage)
+    annotationProcessor(libs.glideCompiler) // untuk Java, gunakan annotationProcessor
+    implementation(libs.fab)
+
+    // Dependency pengujian
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
